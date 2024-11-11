@@ -1,0 +1,122 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    justify-content: center;
+    gap: 2rem;
+    background-color: black;
+    font-size: .875rem;
+}
+
+.main-wrapper{
+    border: 1px black solid;
+    width: 75%;
+    padding: 1rem;
+    background-color: var(--Grey900);
+    border-radius: .4rem;
+    gap: 1.2rem;
+}
+
+.profile-details{
+    gap: 1rem;
+}
+
+.profile-img{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+}
+
+.name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.location{
+    font-size: .8rem;
+    color: var(--Green);
+    margin-top: .25rem;
+
+}
+
+.skill-set{
+    font-size: .7rem;
+}
+
+.social-btn-wrapper{
+    gap: .9rem;
+}
+
+.social-btn{
+    padding:.5rem 0;
+    background-color: var(--Grey700);
+    border: none;
+    border-radius: .3rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.social-btn:hover, .social-btn:focus{
+    background-color: var(--Green);
+    color: var(--Grey800);
+}
+
+.attribution {
+     font-size: 0.6875rem; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* grouping of same css rules for multiple selectors */
+body, .main-wrapper, .profile-details, .social-btn-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-btn, .attribution, .name-location-wrapper{
+    text-align: center; 
+}
+
+body, .profile-details{
+    align-items: center;
+}
+
+body, .social-btn{
+    color: var(--White);
+}
+
+/* css rules for devices with a width more than 320px */
+@media (width > 320px) {
+    body{
+        font-size: 1rem;
+    }
+    .main-wrapper{
+        max-width: 18rem;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .location{
+        font-size: .9rem;    
+    }
+    .skill-set{
+        font-size: .8rem;
+    }
+    
+}
