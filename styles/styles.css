@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
     --Green: hsl(75, 94%, 57%);
     --White: hsl(0, 0%, 100%);
@@ -19,6 +20,7 @@ body{
     gap: 2rem;
     background-color: black;
     font-size: .875rem;
+    font-family: "Inter", sans-serif;
 }
 
 .main-wrapper{
@@ -54,7 +56,7 @@ body{
 }
 
 .skill-set{
-    font-size: .7rem;
+    font-size: .6rem;
 }
 
 .social-btn-wrapper{
@@ -116,7 +118,7 @@ body, .social-btn{
         font-size: .9rem;    
     }
     .skill-set{
-        font-size: .8rem;
+        font-size: .7rem;
     }
     
 }
